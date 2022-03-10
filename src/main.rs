@@ -8,6 +8,8 @@ use ray::Ray;
 
 mod hitable; 
 
+mod sphere; 
+
 fn hit_sphere(centre: Vec3, radius: f64, r: Ray) -> f64 {
     let oc = r.origin() - centre;
     let a = Vec3::dot(r.direction(), r.direction());
